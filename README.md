@@ -1,7 +1,9 @@
 # git-commit
 
-Claude Code 用のコミットスキルです。
-ステージング済みの変更を解析してコミットを実行します。失敗した場合のみ、そのまま貼り付けて実行できる `git commit` コマンドを提案します。
+1回あたりのトークン消費量: 約370トークン（cl100k_baseによる推定値）
+
+Claude Code用のコミットスキルです。
+ステージング済みの変更を解析してコミットを実行します。失敗した場合のみ、そのまま貼り付けて実行できる`git commit`コマンドを提案します。
 
 ## Install
 
@@ -19,7 +21,7 @@ git submodule add git@github.com:uga-skills/git-commit.git .claude/skills/git-co
 
 ## 使い方
 
-Claude Code のチャットで `/git-commit` を実行します。
+Claude Codeのチャットで`/git-commit`を実行します。
 
 ステージング済みの差分を自動で取得し、以下の形式でコマンドを返します:
 
@@ -27,7 +29,7 @@ Claude Code のチャットで `/git-commit` を実行します。
 git commit -m "Fix typo in README"
 ```
 
-変更が複数の種別にまたがる場合は body 付きで返すこともあります:
+変更が複数の種別にまたがる場合はbody付きで返すこともあります:
 
 ```
 git commit -m "Refactor auth module
